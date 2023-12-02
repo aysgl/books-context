@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  transition: all 0.4s;
+}
+
+header {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.card img {
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 20px;
+}
+.card:hover img {
+  margin-right: 0px !important;
+  margin-top: -30px !important;
+  margin-bottom: 50px;
+}
+
+.book {
+  font-family: "Pacifico", cursive;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.book .author {
+  font-family: inherit;
+}/*# sourceMappingURL=style.css.map */

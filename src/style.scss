@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  transition: all 0.4s;
+}
+
+header {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.card {
+  img {
+    margin-right: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px;
+  }
+  &:hover {
+    img {
+      margin-right: 0px !important;
+      margin-top: -30px !important;
+      margin-bottom: 50px;
+    }
+  }
+
+  .icon {
+    color: rgba($color: #fff, $alpha: 0.3);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.book {
+  height: 250px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 0;
+  div {
+    font-family: "Pacifico", cursive;
+  }
+  .author {
+    font-size: 1rem;
+  }
+  &:hover {
+    margin-left: -3px;
+    margin-right: 3px;
+    transition: all 0.4s;
+    &::before {
+      content: "";
+      background-color: black;
+      width: 6px;
+      height: 96%;
+      position: absolute;
+      z-index: -1;
+      border-radius: 0.25rem;
+      opacity: 0.1;
+      right: -6px;
+    }
+  }
+  &::after {
+    content: "";
+    background-color: black;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    border-radius: 0.25rem;
+    opacity: 0.1;
+  }
+}
+
+input {
+  outline: none !important;
+  box-shadow: none !important;
+  &.active {
+    padding: 8px 0px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid grey !important;
+  }
+}
+
+.added {
+  .btn-plus {
+    width: 60px !important;
+  }
+  input::placeholder {
+    color: rgba($color: #000000, $alpha: 0.2);
+  }
+}
